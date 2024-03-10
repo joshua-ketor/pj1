@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rotek.p1j.HelloController">
+   <children>
+      <TextArea fx:id="txtArea" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="txtUsername" layoutX="235.0" layoutY="29.0" prefHeight="25.0" prefWidth="213.0" promptText="USERNAME">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPassword" layoutX="235.0" layoutY="92.0" prefHeight="25.0" prefWidth="213.0" promptText="PASSWORD">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblLogin" layoutX="235.0" layoutY="174.0" prefHeight="40.0" prefWidth="213.0" text="Label" />
+      <ButtonBar layoutX="14.0" layoutY="242.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="btnCopy" mnemonicParsing="false" onAction="#onCopy" prefHeight="51.0" prefWidth="225.0" text="CLICK TO COPY" textFill="#2b22b5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="291.0" layoutY="242.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#onLogin" prefHeight="107.0" prefWidth="202.0" text="LOGIN" textFill="#0fb10f">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <Label fx:id="lblDisplay" layoutX="9.0" layoutY="297.0" prefHeight="97.0" prefWidth="542.0" text="Label" />
+   </children>
+</AnchorPane>
